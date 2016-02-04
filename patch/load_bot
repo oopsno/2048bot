@@ -1,0 +1,9 @@
+--- index.html	2016-02-04 22:19:32.000000000 +0800
++++ index_bot.html	2016-02-04 23:20:01.000000000 +0800
+@@ -95,5 +95,6 @@
+   <script src="js/local_storage_manager.js"></script>
+   <script src="js/game_manager.js"></script>
+   <script src="js/application.js"></script>
++  <script src="javascripts/bot.js"></script>
+ </body>
+ </html>
