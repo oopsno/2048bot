@@ -8,12 +8,9 @@ module.exports = function (grunt) {
           'git submodule update --recursive'
         ].join('&&')
       },
-      mkdir: {
-        command: 'mkdir -p public/javascript'
-      },
       copy: {
         command: ['cp -rf 3rd/2048/ 2048',
-          'cp -f 3rd/object-watch.js/object-watch.js public/javascript/watch.js'
+          'cp -f 3rd/object-watch.js/object-watch.js public/javascripts/watch.js'
         ].join('&&')
       },
       patch: {
@@ -38,6 +35,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.registerTask('default', ['uglify']);
-  grunt.registerTask('init', ['shell:submodule', 'shell:mkdir', 'shell:copy', 'shell:patch', 'uglify'])
-  grunt.registerTask('clean', ['shell:clean'])
+  grunt.registerTask('init', ['uglify', 'shell:submodule', 'shell:copy', 'shell:patch']);
+  grunt.registerTask('clean', ['shell:clean']);
 };
