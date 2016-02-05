@@ -1,0 +1,8 @@
+[submodule "object-watch.js"]
+	path = 3rd/object-watch.js
+	url = https://gist.github.com/384583.git
+	branch = master
+[submodule "2048"]
+	path = 3rd/2048
+	url = https://github.com/gabrielecirulli/2048.git
+	branch = master
